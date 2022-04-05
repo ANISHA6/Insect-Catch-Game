@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catch The Insect</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- In this game, we have three screen
+    we will change the scree using js -->
+    <!-- first screen -->
+    <div class="screen">
+        <h1>Catch The Insect</h1>
+        <button class="btn" id="start-btn">Play Game</button>
+    </div>
+
+    <!-- second screen -->
+    <div class="screen">
+        <h1>What is your "Favourite" insect ?</h1>
+        <ul class="insects-list">
+            <li>
+                <button class="choose-insect-btn">
+                    <p>Fly</p>
+                    <img src="https://res.cloudinary.com/dk-find-out/image/upload/q_80,w_960,f_auto/DCTM_Penguin_UK_DK_AL683548_hjioim.jpg" alt="Fly">
+                </button>
+            </li>
+            <li>
+                <button class="choose-insect-btn">
+                    <p>Mosquito</p>
+                    <img src="https://res.cloudinary.com/dk-find-out/image/upload/q_80,w_640,f_auto/DCTM_Penguin_UK_DK_AL582334_ytajnf.jpg">
+                </button>
+            </li>
+            <li>
+                <button class="choose-insect-btn">
+                    <p>Spider</p>
+                    <img src="https://res.cloudinary.com/dk-find-out/image/upload/q_80,w_960,f_auto/DCTM_Penguin_UK_DK_AL683548_hjioim.jpg" alt="Spider">
+                </button>
+            </li>
+            <li>
+                <button class="choose-insect-btn">
+                    <p>Roach</p>
+                    <img src="https://media.australian.museum/media/dd/images/b1bc3154262548d0925fc63871845fb2.2e16d0ba.fill-600x400.1a6b084.png" alt="Roach">
+                </button>
+            </li>
+        </ul>
+    </div>
+    <!-- third-> Game screen -->
+    <div class="screen game-container" id="game-container">
+        <h3 id="time" class="time">Time: 00:00</h3>
+        <h3 id="score" class="score">Score: 0</h3>
+        <!-- add visible class in h5 through js -->
+        <h5 id="message" class="message">Are you annoyed yet?
+            <br>
+            You are playing an impossible game!!
+        </h5>
+    
+    
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
